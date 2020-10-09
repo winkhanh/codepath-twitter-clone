@@ -40,21 +40,32 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         return tweets.size();
     }
 
+    public void clear(){
+        tweets.clear();
+        notifyDataSetChanged();
+    }
+
+    public void addAll(List<Tweet> tweets){
+        this.tweets.addAll(tweets);
+        notifyDataSetChanged();
+    }
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView ivProfileImage;
         TextView tvBody;
         TextView tvScreenName;
+        TextView tvName;
         public ViewHolder(View itemView){
             super(itemView);
             ivProfileImage=itemView.findViewById(R.id.ivProfileImage);
             tvBody=itemView.findViewById(R.id.tvBody);
             tvScreenName=itemView.findViewById(R.id.tvScreenName);
-
+            tvName=itemView.findViewById(R.id.tvName);
         }
 
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
             tvScreenName.setText(tweet.user.screenName);
+            tvName.setText(tweet.user.name);
             Glide.with(context).load(tweet.user.imageUrl).into(ivProfileImage);
         }
     }
