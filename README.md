@@ -11,7 +11,7 @@ The following **required** functionality is completed:
 - [x] User can **sign in to Twitter** using OAuth login
 - [x]	User can **view tweets from their home timeline**
   - [x] User is displayed the username, name, and body for each tweet
-  - [ ] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
+  - [x] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
 - [x] User can refresh tweets timeline by pulling down to refresh
 
 The following **optional** features are implemented:
@@ -33,7 +33,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 <img src="Walkthrough.gif" title='Video Walkthrough'  width=400><br>
-GIF created with [Peek](https://github.com/phw/peek).
+After add timestamp:
+<img src="Walkthrough2.gif" title='Video Walkthrough 2'  width=400><br>
+GIFs created with [Peek](https://github.com/phw/peek).
 
 
 ## Notes
